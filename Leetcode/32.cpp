@@ -11,10 +11,14 @@ class Solution {
             stack<char> st;
             for(int i=0;i<s.size();i++) {
                 if(s[i] == '(') {
-                    
+                    if(st.empty() || st.top() == ')') {
+                        st.push(s[i]);
+                    }
                     
                 } else {
-                    
+                    if(st.top() == '(') {
+                        st.push(s[i]);
+                    }
                 }
                     
             }
