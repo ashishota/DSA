@@ -2,7 +2,7 @@
 
 using namespace std;
 
-long long maxSubSumKConcat(vector<int> &arr, int n, int k)
+long long maxSubSumKCon(vector<int> &arr, int n, int k)
 {
 	// Write your code here.
 	int size = n*k;
@@ -23,7 +23,7 @@ long long maxSubSumKConcat(vector<int> &arr, int n, int k)
 }
 
 int main() {
-    vector<int> arr = {1, 2, 7, -4, 3, 2, -10, 9, 1};
-    int res = maxSubSumKConcat(arr,arr.size());
+    vector<int> arr = {1,3};
+    int res = maxSubSumKCon(arr,arr.size(),3);
     cout<<res<<endl;
 }
